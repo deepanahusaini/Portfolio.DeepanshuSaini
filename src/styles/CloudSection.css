@@ -1,0 +1,129 @@
+/* ============ CLOUD SECTION ============ */
+#cloud {
+  --c1: #38bdf8;
+  --c2: #60a5fa;
+  overflow: hidden;
+}
+
+[data-theme="light"] #cloud {
+  --c1: #16a34a;
+  --c2: #ec4899;
+}
+
+#cloud .section-tag {
+  color: #38bdf8;
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+[data-theme="light"] #cloud .section-tag {
+  color: var(--accent);
+  border-color: rgba(16, 163, 74, 0.3);
+}
+
+.clouds {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.cloud {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.35;
+  animation: drift linear infinite;
+}
+
+[data-theme="light"] .cloud {
+  opacity: 0.2;
+}
+
+.cloud.c1 {
+  width: 600px;
+  height: 220px;
+  top: 12%;
+  left: -20%;
+  background: radial-gradient(circle, #38bdf8, transparent 70%);
+  animation-duration: 38s;
+}
+
+[data-theme="light"] .cloud.c1 {
+  background: radial-gradient(circle, rgba(16, 163, 74, 0.5), transparent 70%);
+}
+
+.cloud.c2 {
+  width: 420px;
+  height: 180px;
+  top: 45%;
+  left: -30%;
+  background: radial-gradient(circle, #818cf8, transparent 70%);
+  animation-duration: 52s;
+  animation-delay: -18s;
+}
+
+[data-theme="light"] .cloud.c2 {
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.4), transparent 70%);
+}
+
+.cloud.c3 {
+  width: 700px;
+  height: 260px;
+  top: 70%;
+  left: -40%;
+  background: radial-gradient(circle, #60a5fa, transparent 70%);
+  animation-duration: 45s;
+  animation-delay: -30s;
+}
+
+[data-theme="light"] .cloud.c3 {
+  background: radial-gradient(circle, rgba(16, 163, 74, 0.3), transparent 70%);
+}
+
+.cloud.c4 {
+  width: 360px;
+  height: 140px;
+  top: 25%;
+  left: -10%;
+  background: radial-gradient(circle, #a5f3fc, transparent 70%);
+  animation-duration: 60s;
+  animation-delay: -8s;
+}
+
+[data-theme="light"] .cloud.c4 {
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.25), transparent 70%);
+}
+
+@keyframes drift {
+  from { transform: translateX(0); }
+  to { transform: translateX(170vw); }
+}
+
+.cloud-float {
+  position: absolute;
+  right: 6vw;
+  top: 12%;
+  z-index: -1;
+  opacity: 0.5;
+  font-size: 7rem;
+  animation: float 6s ease-in-out infinite;
+  filter: drop-shadow(0 0 30px rgba(56, 189, 248, 0.5));
+}
+
+[data-theme="light"] .cloud-float {
+  filter: drop-shadow(0 0 20px rgba(16, 163, 74, 0.3));
+  opacity: 0.7;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(-3deg); }
+  50% { transform: translateY(-30px) rotate(3deg); }
+}
+
+@media (max-width: 768px) {
+  .cloud-float {
+    display: none;
+  }
+}
+

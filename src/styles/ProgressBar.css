@@ -1,0 +1,12 @@
+/* ============ PROGRESS BAR ============ */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  z-index: 1001;
+  background: linear-gradient(90deg, var(--accent), var(--accent2), var(--gradient-pink));
+  transition: width 0.1s linear;
+}
+

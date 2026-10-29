@@ -1,0 +1,10 @@
+/* ============ SECTION DIVIDER GLOW LINE ============ */
+.divider {
+  position: relative;
+  z-index: 2;
+  height: 1px;
+  margin: 0 6vw;
+  background: linear-gradient(90deg, transparent, var(--accent), var(--accent2), transparent);
+  opacity: var(--divider-opacity);
+}
+

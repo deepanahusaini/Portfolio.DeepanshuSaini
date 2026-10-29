@@ -1,0 +1,42 @@
+/* ============ CONTACT & FOOTER ============ */
+#contact {
+  min-height: 70vh;
+  text-align: center;
+  align-items: center;
+}
+
+.contact-links {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.contact-links a {
+  padding: 14px 28px;
+  border-radius: 40px;
+  border: 1px solid var(--btn-border);
+  background: var(--btn-bg);
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.contact-links a:hover {
+  background: linear-gradient(135deg, var(--accent), var(--gradient-pink));
+  color: var(--contact-hover-color);
+  transform: translateY(-4px);
+}
+
+footer.portfolio-footer {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 30px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  border-top: 1px solid var(--footer-border);
+}
+
