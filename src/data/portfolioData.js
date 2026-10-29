@@ -199,7 +199,7 @@ export const portfolioData = {
     title: "Have a Project in Mind?",
     subtitle: "I'm open to full-time roles, freelance projects and collaborations. Let's build something amazing together.",
     links: [
-      { label: "✉️ Email", href: "deepansu0saini@gmail.com" },
+      { label: "✉️ Email", href: "mailto:deepanshu0saini@gmail.com?subject=Hii,%20I recently visited your portfolio site" },
       { label: "💼 LinkedIn", href: "https://www.linkedin.com/in/deepanshu-saini-5a2653259/", external: true },
       { label: "🐙 GitHub", href: "https://github.com/deepanahusaini", external: true },
       { label: "📄 Resume", href: "#", download: true }
